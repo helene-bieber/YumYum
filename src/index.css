@@ -1,13 +1,160 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#map {
+  width: 50%;
+  height: 70vh;
+  margin: 20px;
+  margin-right: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+#storesColumn {
+  height: 600px;
+  overflow: scroll;
+}
+
+.listStore {
+  border: 1px solid #eeeeef;
+
+  list-style: none;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  padding: 20px;
+  overflow: scroll;
+  position: relative;
+  width: 500px;
+}
+
+.listStore:first-of-type {
+  margin-top: 100px;
+}
+
+p {
+  margin: 2px;
+  color: #757280;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+}
+
+.listStore:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.storeInfo {
+  margin-left: 190px;
+}
+
+.photo {
+  width: 150px;
+  height: 100px;
+  border-radius: 8px;
+  position: absolute;
+  display: block;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.price {
+  float: right;
+  margin-left: 60px;
+  color: black;
+}
+
+input {
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: 1px solid #ebebeb;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-family: "Raleway", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  outline: none;
+  margin-left: 40px;
+  font-size: 120%;
+}
+
+input:focus {
+  background-color: white;
+}
+
+button {
+  background-color: #ec2044;
+  border-radius: 20px;
+  padding: 15px;
+  outline: none;
+  margin-left: 20px;
+  font-size: 120%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  text-align: left;
+  font-size: 300%;
+  padding: 30px;
+  background-color: rgb(236, 32, 68);
+  color: white;
+}
+
+.search {
+  margin: 0;
+  height: 65px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  position: absolute;
+  margin-top: 20px;
+}
+
+.search > img {
+  height: 20px;
+}
+
+.searchBar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  z-index: 2;
+}
+
+input[type="text"],
+textarea {
+  background-color: white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 40px white inset !important;
+}
+
+.order {
+  padding: 10px;
+  font-size: 100%;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  float: right;
 }
