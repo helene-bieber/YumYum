@@ -31,7 +31,7 @@ class App extends React.Component {
     script.onload = function() {
       mapState = window.tomtom.L.map("map", {
         source: "vector",
-        key: "K5jTkGeAK3yPlw3y6AI7CFR4N4ubVGIl",
+        key: "Your API key",
         center: [37.769167, -122.478468],
         basePath: "/sdk",
         zoom: 3
